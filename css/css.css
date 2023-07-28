@@ -112,7 +112,7 @@
 
 .g_wrap {
     left: 0;
-    top: 219px;
+    top: 218px;
     background-color: #fff;
     width: 100%;
     padding: 55px 20px 20px 350px;
@@ -123,13 +123,13 @@
 }
 
 .g_wrap.on{
-    display: block;
+    /* display: block; */
 }
 
 .container {
-    width: 1600px;
+    width: 1200px;
     /* height: 852px; */
-    display: block;
+    display: flex;
     margin: 0 auto;
     
 }
@@ -138,6 +138,11 @@
     justify-content: space-between;
     display: flex;
 }
+
+.gnb_01 > ul {
+    margin-right: 20px;
+}
+
 
 .gnb_01 ul li a {
     display: block;
@@ -159,8 +164,7 @@
 
 .g_title {
     display: block;
-    width: 270px;
-    height: 51px;
+    width: 250px;
     line-height: 40px;
     font-size: 17px;
     font-weight: bold;
@@ -197,7 +201,7 @@
 }
 
 .gnb > ul > li:hover {
-    border-bottom: 1px solid #336ac0;
+    border-bottom: 2px solid #336ac0;
 }
 
 
@@ -226,6 +230,8 @@
 
 /*  */
 .t_area {
+    position: absolute;
+    left: 150px;
     width: 250px;
     height: 480px;
     padding-top: 50px;
@@ -245,13 +251,14 @@
 }
 
 .container_t {
-    width: 1600px;
+    width: 1200px;
     justify-content: center;
     display: flex;
     
 }
 
 .gnb_02 {
+    
     display: grid;
     grid-template-columns: repeat(5, 2fr);
 }
@@ -493,10 +500,15 @@
     margin-right: 37px;
 }
 
+.b_tab > div {
+    border: 0;
+}
+
 .b_title {
     display: flex;
     position: relative;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
 }
 
 .b_title h4{
@@ -532,7 +544,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
-    border-top: 1px solid #ddd;
     padding-bottom: 30px;
 }
 
@@ -773,10 +784,15 @@
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
-.f_items > ul li a:hover {
-    transition: transform 0.3s linear;
-    transform: scaleX(-1);
+.f_items > ul li a img{
+    transition: all 0.15s;
+    transform: rotateY(0deg);
+}
 
+
+.f_items > ul li:hover a img {
+    transition: all 0.15s;
+    transform: rotateY(180deg);
 }
 
 
@@ -813,6 +829,7 @@
     height: 50px;
     line-height: 50px;
     font-size: 17px;
+    border-right: 1px solid #ddd;
     background-color: #f3f3f3;
     color: #4d4d4d;
 }
@@ -834,8 +851,6 @@
 
 .s_title li:last-child a {
     border-top-right-radius: 20px;
-    
-
 }
 
 
@@ -1115,7 +1130,18 @@
 .f_menu > li > a > p {
     margin-top: 23px;
     width: 500px;
+    border-right: 1px solid #7e7e7e;
 }
+
+.f_menu > li:first-child > a > p {
+    border-left: 1px solid #7e7e7e;
+    padding-left: 20px;
+}
+
+
+
+
+
 
 .f_menu li > div {
     display: none;
