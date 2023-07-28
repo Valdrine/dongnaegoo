@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #636363;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 auto;
+    
+}
+
+.t_area {
+    width: 350px;
+    height: 480px;
+    padding-top: 50px;
+}
+
+.t_area p {
+    font-size: 45px;
+    color: #367acd;
+    line-height: 45px;
+    font-weight: bold;
+    
+
+}
+
+.g_wrap_t {
+    width: 100%;
+    padding: 55px 20px 20px 350px;
+}
+
+.container_t {
+    width: 1600px;
+    height: 555px;
+    display: flex;
+}
+
+.gnb_02 {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+
+.gnb_02 li {
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 162px;
+    margin: 0 11.46px 30px 11.46px ;
+    overflow: hidden;
+}
+
+.gnb_02 li a {
+    display: block;
+    width: 200px;
+    height: 162px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+.gnb_02 li img {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    transition: all 0.5s;
+
+}
+
+.gnb_02 li a:hover img {
+    top: -90px;
+    transition: all 0.5s;
+}
+
+.gnb_02 li a:hover {
+    background-color: #3179cf;
+    transition: all 0.5s;
+
+}
+

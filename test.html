@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/test.css">
+</head>
+<body>
+
+    
+
+    <div class="gnb">
+        <div class="logo"><a href="#x"><img src="./images/logo.png" alt=""></a></div>
+        <ul>
+            <li>
+                <a href="#x">민원창구<div class="test"></div></a>
+                
+            </li>
+            <li>
+                <a href="#x">행정정보</a>
+                
+            </li>
+            <li>
+                <a href="#x">구민참여</a>
+                
+            </li>
+            <li><a href="#x">분야별정보</a></li>
+            <li><a href="#x">얼쑤동래</a></li>
+            <li><a href="#x">정보공개</a></li>
+            <li><a href="#x">문화광장</a></li>
+        </ul>
+        
+        
+
+        
+    </div>
+    
+    <script>
+        $('.test').load('./pages/b_info.html')
+
+        $('.test').hide()
+
+        $('.gnb ul li a').hover(function(){
+            $('.test').stop().show()
+        },
+        function(){
+            $('.test').stop().hide()
+        })
+
+        $(function(){
+            $('.header').load('./pages/header.html');
+        })
+    </script>
+    
+</body>
+</html>

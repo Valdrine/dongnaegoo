@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동래구청/footer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+    <div class="wrap">
+        
+
+        <div class="footer">
+            <div class="f_navi">
+                <div class="f_site">
+                    <ul>
+                        <li class="f_on">개인정보처리방침</li>·
+                        <li>이메일무단수집거부</li>·
+                        <li>홈페이지 개선의견</li>·
+                        <li>뷰어다운로드</li>·
+                        <li>오시는길</li>·
+                        <li>직원검색</li>·
+                        <li>사이트맵</li>·
+                    </ul>
+    
+                    <div class="web">
+                        <img src="../images/footer_wa.jpg" alt="">
+                        <img src="../images/footer_web.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_05">
+                <div class="f_bottom">
+                    <div class="f_logo"><img src="../images/flogo.png" alt=""></div>
+                    <div class="copyright">
+                        <div class="addr">
+                            <ul>
+                                <li><p>부산광역시 동래구 온천천로359번길 70(낙민동)</p></li>
+                                <li><p><b>전화</b>051-550-4000</p></li> 
+                                <li><p><b>팩스</b>051-550-4444</p></li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li><p>본 웹사이트에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의한 처벌됨을 유념하시기 바랍니다.</p></li>
+                            <li><p>Copyrightⓒ2017, Dongnae-gu. All rights reserved.</p></li>
+                        </ul>
+                    </div>
+                    <div class="qr">
+                        <img src="../images/f_image_01.png" alt="">
+                        <img src="../images/f_image_02.png" alt="">
+                        <img src="../images/f_image_03.png" alt="">
+                        <img src="../images/f_image_04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+
+
+
+
+        $('.m_s_item').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+
+            prevArrow : $('.ms_pre'), 
+            nextArrow : $('.ms_next')
+
+            })
+
+        $('.banner').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+
+            prevArrow : $('.b_pre'), 
+            nextArrow : $('.b_next')
+            })
+
+            
+
+    //  게시판
+            $('.b_title h4').click(function(){
+                    $('.b_title h4').removeClass('on')
+                    $(this).addClass('on')
+
+            })
+
+            $('.s_title li').click(function(){
+                
+                $('.s_tab').hide()
+                $('.s_tab').eq($(this).index()).show()
+                
+            })
+
+            $('.s_title li a').click(function(){
+                $('.s_title li a').removeClass('on')
+                $(this).addClass('on')
+            })
+
+            $('.s_tab').eq(0).show()
+            
+    //
+    $('.b_title h4').click(function(){
+
+        $('.b_tab').hide()
+        $('.b_tab').eq($(this).index()).show()
+    })
+
+    $('.b_tab').eq(0).show()
+
+    // footer
+
+    $('.div ul').click(
+        console.log('a'))
+
+    // footer
+
+    $('.f_menu > li > a').click(function(){
+        $(this).next('div').toggle()
+    })
+
+
+    </script>
+</body>
+</html>

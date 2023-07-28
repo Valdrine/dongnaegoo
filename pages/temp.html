@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/temp.css">
+    
+</head>
+<body>
+    <div class="menu">
+        <ul class="gnb">
+            <li>
+                <a href="#">aaa</a>
+                <div class="item">a</div>                
+            </li>
+            <li>
+                <a href="#">bbb</a>
+                <div class="item">b</div>                
+            </li>
+            <li>
+                <a href="#">ccc</a>
+                <div class="item">c</div>                
+            </li>          
+            <li>
+                <a href="#">ccc</a>
+                <div class="item">c</div>                
+            </li>          
+            <li>
+                <a href="#">ccc</a>
+                <div class="item">c</div>                
+            </li>          
+            <li>
+                <a href="#">ccc</a>
+                <div class="item">c</div>                
+            </li>          
+        </ul>
+    </div>
+    <script>
+        console.log($('.gnb'))
+
+        $('.gnb li').hover(
+            function(){
+                $(this).find('.item').addClass('active')
+            },
+            function(){
+                $(this).find('.item').removeClass('active')
+            }
+        )
+
+    </script>    
+</body>
+</html>
